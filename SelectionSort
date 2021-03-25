@@ -14,7 +14,7 @@ int main() {
     cout<<"To exit the loop enter -1 \n";
     cout << "Enter elements of array one by one with a space:";
     int n=0;
-    
+
     while (1){
         cin>>n;
         if (n==-1)
@@ -23,10 +23,10 @@ int main() {
     }
 
     auto start = high_resolution_clock::now();                 //We will calculate the execution time t to understand time complexity
-    
-    
+
+
     //Sorting algo starts here
-    
+
     for(i=0;i<(A.size());++i){
         for(j=i;j<(A.size());++j){
             if(A[i]>A[j]){
@@ -35,10 +35,10 @@ int main() {
                 A[j]=temp;
             }
         }
-    
+
     }
     //ends here
-    
+
     auto stop = high_resolution_clock::now();
     auto timetook=duration_cast<microseconds>(stop - start);
     cout<<"Time took by algo: "<<timetook.count()<<" microseconds \n";
