@@ -6,7 +6,7 @@
 
 using namespace std;
 using namespace std::chrono;
-
+                                                                                //code begins
 int main() {
     // Write C++ code here
     vector <int> A;
